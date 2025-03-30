@@ -92,7 +92,7 @@
             let to_email = document.getElementById("to_email").value;
             let message = document.getElementById("message").value;
 
-            fetch("/send-email", {
+            fetch("https://back-email-qto7.onrender.com/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ to_email, message })
